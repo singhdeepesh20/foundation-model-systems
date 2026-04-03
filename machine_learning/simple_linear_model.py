@@ -1,1 +1,1 @@
-simple linear regresion
+simple linear regresion 
