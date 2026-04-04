@@ -1,3 +1,3 @@
 simple linear regresion 
 
-ITS FITS
+ITS FITS the best fit line
