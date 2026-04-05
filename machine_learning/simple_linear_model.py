@@ -17,7 +17,27 @@ Instantiate Linear Regression model
 model = LinearRegression()
 
 # -------------------------------
-# 4. Model Training
+#  Model Training
 # -------------------------------
 # Fit model parameters using least squares optimization
 model.fit(X, y)
+
+Generate predictions on the input feature space
+y_pred = model.predict(X)
+
+# -------------------------------
+#  Visualization
+# -------------------------------
+# Plot original data points
+plt.scatter(X, y, label="Observed Data")
+
+# Plot learned regression line
+plt.plot(X, y_pred, label="Model Fit")
+
+# Add metadata for interpretability
+plt.xlabel("Feature")
+plt.ylabel("Target")
+plt.title("Simple Linear Regression")
+
+plt.legend()
+plt.show()
