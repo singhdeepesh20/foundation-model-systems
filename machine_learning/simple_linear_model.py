@@ -67,3 +67,24 @@ X_train, X_test, y_train, y_test = train_test_split(
     X, y, test_size=0.2, random_state=42
 )
 
+class MultipleLinearRegression:
+    """
+    Custom implementation using Normal Equation:
+    θ = (XᵀX)^(-1) Xᵀy
+    """
+
+    def fit(self, X, y):
+        # Add bias term (intercept)
+        X_b = np.c_[np.ones((X.shape[0], 1)), X]
+
+        # Compute theta using Normal Equation
+        self.theta = np.linalg.inv(X_b.T @ X_b) @ X_b.T @ y
+
+    def predict(self, X):
+        # Add bias term
+        X_b = np.c_[np.ones((X.shape[0], 1)), X]
+
+        return X_b @ self.theta
+
+
+
