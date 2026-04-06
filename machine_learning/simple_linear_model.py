@@ -98,4 +98,13 @@ print("🔹 Custom Model Performance")
 print("R2 Score:", r2_score(y_test, y_pred_custom))
 print("MSE:", mean_squared_error(y_test, y_pred_custom))
 
+print("\n🔹 Model Parameters (Sklearn)")
+print("Intercept:", sk_model.intercept_)
+print("Coefficients:", sk_model.coef_)
 
+"""
+Interpretation:
+- Each coefficient represents the change in target variable (y)
+  for a one-unit change in the corresponding feature,
+  keeping other features constant.
+"""
