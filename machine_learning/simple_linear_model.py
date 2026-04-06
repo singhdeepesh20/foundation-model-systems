@@ -108,5 +108,4 @@ Interpretation:
   for a one-unit change in the corresponding feature,
   keeping other features constant.
 """
-
-"push to github"
+
