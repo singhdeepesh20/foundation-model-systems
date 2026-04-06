@@ -1,9 +1,9 @@
-simple linear regresion 
+# simple linear regresion 
 
-ITS FITS the best fit line
+# ITS FITS the best fit line
 
 
-Instantiate Linear Regression model
+# Instantiate Linear Regression model
 # Learns relationship: y = (coef * X) + intercept
 model = LinearRegression()
 
@@ -12,7 +12,7 @@ model = LinearRegression()
 X = data[['feature']]   # Independent variable (predictor)
 y = data['target']      # Dependent variable (response)
 
-Instantiate Linear Regression model
+# Instantiate Linear Regression model
 # Learns relationship: y = (coef * X) + intercept
 model = LinearRegression()
 
@@ -22,7 +22,7 @@ model = LinearRegression()
 # Fit model parameters using least squares optimization
 model.fit(X, y)
 
-Generate predictions on the input feature space
+# Generate predictions on the input feature space
 y_pred = model.predict(X)
 
 # -------------------------------
@@ -50,7 +50,7 @@ from sklearn.metrics import r2_score, mean_squared_error
 from sklearn.linear_model import LinearRegression
 
 
-Replace with your dataset
+# Replace with your dataset
 # Example: data.csv with columns: ['X1', 'X2', 'X3', 'y']
 df = pd.read_csv("data.csv")
 
@@ -86,7 +86,7 @@ class MultipleLinearRegression:
 
         return X_b @ self.theta
 
-Train custom model
+# Train custom model
 custom_model = MultipleLinearRegression()
 custom_model.fit(X_train, y_train)
 
@@ -108,3 +108,5 @@ Interpretation:
   for a one-unit change in the corresponding feature,
   keeping other features constant.
 """
+
+"push to github"
