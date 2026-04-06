@@ -49,3 +49,21 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import r2_score, mean_squared_error
 from sklearn.linear_model import LinearRegression
 
+
+Replace with your dataset
+# Example: data.csv with columns: ['X1', 'X2', 'X3', 'y']
+df = pd.read_csv("data.csv")
+
+# Features (Independent Variables)
+X = df.drop(columns=["y"]).values
+
+# Target (Dependent Variable)
+y = df["y"].values.reshape(-1, 1)
+
+# ==============================
+# ✂️ Train-Test Split
+# ==============================
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.2, random_state=42
+)
+
