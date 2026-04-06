@@ -86,5 +86,16 @@ class MultipleLinearRegression:
 
         return X_b @ self.theta
 
+Train custom model
+custom_model = MultipleLinearRegression()
+custom_model.fit(X_train, y_train)
+
+# Predictions
+y_pred_custom = custom_model.predict(X_test)
+
+# Evaluation
+print("🔹 Custom Model Performance")
+print("R2 Score:", r2_score(y_test, y_pred_custom))
+print("MSE:", mean_squared_error(y_test, y_pred_custom))
 
 
