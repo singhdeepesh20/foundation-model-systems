@@ -23,13 +23,13 @@ model = LinearRegression()
 model.fit(X, y)
 
 # Generate predictions on the input feature space
-y_pred = model.predict(X)
+y_pred = model.predict(X) 
 
 # -------------------------------
 #  Visualization
 # -------------------------------
 # Plot original data points
-plt.scatter(X, y, label="Observed Data")
+#plt.scatter(X, y, label="Observed Data")
 
 # Plot learned regression line
 plt.plot(X, y_pred, label="Model Fit")
