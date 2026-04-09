@@ -5,7 +5,7 @@
 
 # Instantiate Linear Regression model
 # Learns relationship: y = (coef * X) + intercept
-model = LinearRegression()
+model = LinearRegression
 
 
 # Reshape feature into 2D array as required by scikit-learn
