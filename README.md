@@ -1,6 +1,6 @@
 <div align="center">
 
-# Foundation Model 
+# Foundation Model System
 
 ### Engineering Modern AI — From First Principles to Scalable Intelligence
 
