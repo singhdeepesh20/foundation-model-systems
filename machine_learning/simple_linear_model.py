@@ -182,9 +182,7 @@ class SimpleLinearRegression:
         return 1 - (ss_res / ss_tot)
 
 
-# ---------------------------
-# Example Usage
-# ---------------------------
+
 if __name__ == "__main__":
     # Sample dataset
     X = [1, 2, 3, 4, 5]
