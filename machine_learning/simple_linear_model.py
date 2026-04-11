@@ -102,12 +102,7 @@ print("\n🔹 Model Parameters (Sklearn)")
 print("Intercept:", sk_model.intercept_)
 print("Coefficients:", sk_model.coef_)
 
-"""
-Interpretation:
-- Each coefficient represents the change in target variable (y)
-  for a one-unit change in the corresponding feature,
-  keeping other features constant.
-"""
+
 
 print("\n🔹 Model Parameters (Sklearn)")
 print("Intercept:", sk_model.intercept_)
