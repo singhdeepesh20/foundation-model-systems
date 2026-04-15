@@ -201,3 +201,4 @@ if __name__ == "__main__":
     print("Intercept (b):", model.b)
     print("Predictions:", predictions)
     print("R2 Score:", model.score(X,y))
+# finised 
