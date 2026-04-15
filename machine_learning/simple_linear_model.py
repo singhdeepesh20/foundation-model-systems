@@ -200,4 +200,4 @@ if __name__ == "__main__":
     print("Slope (m):", model.m)
     print("Intercept (b):", model.b)
     print("Predictions:", predictions)
-    print("R2 Score:", model.score(X, y))
+    print("R2 Score:", model.score(X, ))
