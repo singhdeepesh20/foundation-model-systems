@@ -12,7 +12,7 @@ model = LinearRegression()
 X = data[['feature']]   # Independent variable (predictor)
 y = data['target']     
 
-# Instantiate Linear Regression model
+
 # Learns relationship: y = (coef * X) + intercept
 model = LinearRegression()
 
